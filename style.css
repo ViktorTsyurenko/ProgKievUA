@@ -1,28 +1,46 @@
-.main {
-    background-color: gray;
-    max-width: 90%;
+body {
     margin: 0 auto;
-    padding-top: 1%;
 }
-.inner {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    background-color: lightgreen;
-    max-width: 90%;
-    margin: 0 auto;
-    padding-top: 0.9%;
 
-}
-.inner div {
+.header {
     background-color: red;
-    border: 1px solid white;
-    width: 10%;
-    height: 100px;
-    margin: 0 1px 3px 1px;
+    height: 60px;
 }
-@media screen and (max-width: 960px){
-    .inner div{
-        width: 30%;
+
+.main {
+    display: flex;
+    height: 400px;
+}
+
+
+.green {
+    background-color: green;
+    flex: 1;
+}
+
+.yellow {
+    background-color: yellow;
+    flex: 2;
+}
+
+.blue {
+    background-color: blue;
+    flex: 1;
+}
+
+.footer {
+    background-color: black;
+    height: 50px;
+}
+
+@media screen and (max-width: 780px){
+    .yellow{
+        flex: 5;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .main {
+        flex-direction: column;
     }
 }
